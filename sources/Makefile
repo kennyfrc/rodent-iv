@@ -22,7 +22,7 @@ default: build
 
 build:
 	@echo "Type make help for additional options"
-	$(CC) $(LDFLAGS) $(CFLAGS) -std=c++14 src/*.cpp -o $(EXENAME)
+	$(CC) $(LDFLAGS) $(CFLAGS) -pthread -std=c++14 src/*.cpp -o $(EXENAME)
 
 clean:
 	rm -f $(EXENAME)
